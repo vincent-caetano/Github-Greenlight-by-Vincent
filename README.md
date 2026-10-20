@@ -250,10 +250,6 @@ scripts/build-app.sh --zip               # build a release zip
 | [`Icons.swift`](Sources/Greenlight/Icons.swift) | The menu bar gauge, the GitHub mark and the app icon |
 | [`Demo.swift`](Sources/Greenlight/Demo.swift) | Made-up data for the demo and the screenshots |
 
-## Related
-
-**[Hostbar](https://github.com/vincent-caetano/hostbar)**, the same idea for your Linux server: CPU, memory and disk in the menu bar over SSH.
-
 ## License
 
 [MIT](LICENSE) © 2026 Vincent Caetano
