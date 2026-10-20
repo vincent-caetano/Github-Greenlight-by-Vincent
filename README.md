@@ -90,10 +90,12 @@ GitHub Greenlight reads your Actions budget and whether it stops usage at the li
 Paste this into any agent that can run commands on your Mac:
 
 ```text
-Install GitHub Greenlight, a macOS menu bar app for GitHub Actions usage, from
-https://github.com/vincent-caetano/Github-Greenlight-by-Vincent
-Clone it, run scripts/build-app.sh --install, and make sure `gh auth status` is logged in.
-Never ask me for tokens in chat: give me the command to run myself.
+Install GitHub Greenlight, a macOS menu bar app for GitHub Actions usage.
+1. Make sure `gh auth status` is logged in. If not, give me `gh auth login` to run myself.
+2. Download the latest release:
+   gh release download --repo vincent-caetano/Github-Greenlight-by-Vincent --pattern "*.zip" --dir /tmp/greenlight --clobber
+3. Unzip it into /Applications, clear the quarantine flag on "GitHub Greenlight.app" and open it.
+4. Confirm it is running. Never ask me for tokens in chat.
 ```
 
 ### Or set it up yourself
