@@ -15,6 +15,7 @@ and which workflows are running right now, without opening the billing page.
 [![No tokens stored](https://img.shields.io/badge/tokens%20stored-none-2ea44f)](#privacy-and-permissions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
+[Download](https://github.com/vincent-caetano/Github-Greenlight-by-Vincent/releases/latest) ·
 [Get started](#get-started) ·
 [Features](#features) ·
 [How it works](#how-it-works) ·
@@ -104,7 +105,13 @@ brew install gh
 gh auth login
 ```
 
-**2. Build and install GitHub Greenlight.** You need the Xcode command line tools (`xcode-select --install`).
+**2. Install GitHub Greenlight.** Grab **GitHub-Greenlight.zip** from the [latest release](https://github.com/vincent-caetano/Github-Greenlight-by-Vincent/releases/latest), unzip it and drag **GitHub Greenlight.app** into **Applications**. The first time, macOS will say it cannot check the app for malware, because it is not notarized by Apple yet. Open **System Settings → Privacy & Security** and click **Open Anyway**, or run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/GitHub Greenlight.app"
+```
+
+To build from source instead, you need the Xcode command line tools (`xcode-select --install`):
 
 ```bash
 git clone https://github.com/vincent-caetano/Github-Greenlight-by-Vincent.git
